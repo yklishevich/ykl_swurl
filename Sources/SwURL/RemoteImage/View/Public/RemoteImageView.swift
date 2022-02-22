@@ -20,7 +20,6 @@ public protocol ImageOutputCustomisable {
 
 public enum SwURLImageView: SwURLImageViewType {
     case iOS13(iOS13RemoteImageView)
-    @available(iOS 14.0, *)
     case iOS14(iOS14RemoteImageView)
     
     init<Base: SwURLImageViewType>(_ base: Base) {
